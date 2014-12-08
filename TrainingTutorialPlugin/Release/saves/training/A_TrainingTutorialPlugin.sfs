@@ -1,0 +1,51 @@
+GAME
+{
+    // Tutorial definition file. 
+	// 
+	// This tutorial definition describes the training setup conditions to recreate the scenario
+	// required for the module to work.
+
+    // Set valid game version. This number specifies the minimun required game version to run this
+	// training tutorial.
+	version = 0.21.0 
+	
+	// Training title, as shown in the training mission list
+	Title = Training Tutorial Plugin
+	
+	// Training description, as shown in the training mission list
+	Description = This is a simple tutorial plugin demonstration. This tutorial is not exactly a training module and does not actually implement any in-game feature. The purpose of this training is to describe and showcase the different options and the machine state systems used by tutorial plugins.
+	
+	// Mission list Url button link and description. This link information is used to create a custom
+	// button that appears below the training description area.
+	linkURL = www.google.es/test
+	linkCaption = Find more like this!!!	
+
+    // Training mode: in this case it is a prepared scenario without resuming options.
+	Mode = 3 
+	
+	// The starting scene: in this case the training will start in the space center view.
+	scene = 5
+	
+	// Flag to use in this Training scenario.
+	flag = Squad/Flags/default
+
+    // The scenario section describes how the different game components behave. In this case, 
+    // We specify the custom class to handle this tutorial (our own class) and the starting
+    // scene.	
+	SCENARIO
+	{
+		name = SimpleTutorialPlugin
+		scene = 5
+	}
+	
+	// The following sections are not required for this demonstration tutorial plugin.
+	PARAMETERS
+	{
+	}
+	FLIGHTSTATE
+	{
+	}
+	ROSTER
+	{
+	}
+}
