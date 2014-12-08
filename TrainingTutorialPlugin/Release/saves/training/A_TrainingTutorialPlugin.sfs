@@ -17,7 +17,7 @@ GAME
 	
 	// Mission list Url button link and description. This link information is used to create a custom
 	// button that appears below the training description area.
-	linkURL = www.google.es/test
+	linkURL = github.com/ilo/
 	linkCaption = Find more like this!!!	
 
     // Training mode: in this case it is a prepared scenario without resuming options.
@@ -34,7 +34,7 @@ GAME
     // scene.	
 	SCENARIO
 	{
-		name = SimpleTutorialPlugin
+		name = TrainingTutorialPlugin
 		scene = 5
 	}
 	
